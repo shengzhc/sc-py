@@ -8,17 +8,21 @@ try:
 except IOError:
     print("Error: cant find the file or write data")
 
+
 class Error(Exception):
     """Base class for other exceptions"""
     pass
+
 
 class InputTooSmallException(Error):
     """Raised when input is smaller than actual one"""
     pass
 
+
 class InputTooLargeException(Error):
     """Raised when input is larger than actual one"""
     pass
+
 
 actual = "m"
 
