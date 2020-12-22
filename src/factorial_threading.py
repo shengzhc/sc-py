@@ -16,7 +16,6 @@ def factorial(n):
         returnNumber = n * factorial(n-1)
         print("{} != {}".format(str(n), str(returnNumber)))
         rc = returnNumber
-
     return rc
 
 
@@ -24,4 +23,4 @@ thread.start_new_thread(factorial, (5, ))
 thread.start_new_thread(factorial, (4, ))
 
 print("Waiting for threads to return...")
-time.sleep(1)
+time.sleep(2)
